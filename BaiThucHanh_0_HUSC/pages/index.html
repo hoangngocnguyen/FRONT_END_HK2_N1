@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin tuyển sinh</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        margin: 0 50px;
+        font-size: 22px;
+      }
+
+      .header {
+        display: flex;
+        height: 100px;
+        margin-top: 15px;
+      }
+      .header img {
+        width: 420px;
+        height: 83px;
+      }
+      .header h1 {
+        flex-shrink: 0;
+        margin-left: 200px;
+        color: #c00000;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+      }
+
+      .img__row img {
+        width: 100%;
+        height: auto;
+      }
+
+      table {
+        border: 1px solid;
+        border-collapse: collapse;
+        width: 95%;
+      }
+      table caption {
+        margin: 7px 0 10px 0;
+        text-align: left;
+        color: #c00000;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      td {
+        border: 1px solid;
+      }
+      td:nth-child(1),
+      td:nth-child(2) {
+        padding: 10px 0 10px 10px;
+      }
+
+      .no-underline {
+        text-decoration: none;
+      }
+
+      .tuvants {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .video {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .video track {
+        width: 80%;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://tuyensinh.husc.edu.vn/wp-content/themes/tuyensinhv3/images/logo.png"
+        alt=""
+      />
+      <h1>THÔNG TIN TUYỂN SINH</h1>
+    </div>
+
+    <div class="img__row">
+      <img src="../images/dhkh.png" alt="" class="header__img2" />
+    </div>
+
+    <table>
+      <caption>
+        Danh sách ngành đào tạo
+      </caption>
+      <tr>
+        <td rowspan="2">Công nghệ thông tin</td>
+        <td>
+          <a href="gioi-thieu-cntt.html" class="no-underline">Giới thiệu</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ctdt-cntt.html" class="no-underline">Chương trình đào tạo</a>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Kiến trúc</td>
+        <td>Giới thiệu</td>
+      </tr>
+      <tr>
+        <td>Chương trình đào tạo</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Báo chí</td>
+        <td>Giới thiệu</td>
+      </tr>
+      <tr>
+        <td>Chương trình đào tạo</td>
+      </tr>
+    </table>
+
+    <div class="tuvants">
+      <a href="tu-van.html">
+        <img src="../images/tu-van-tuyen-sinh.png" alt="" />
+      </a>
+    </div>
+
+    <div class="video">
+      <video controls>
+        <source src="../videos/intro.mp4" />
+        <track
+          src="../videos/PhuDe.vtt"
+          label="Tiếng Việt"
+          kind="subtitles"
+          srclang="vi"
+          default
+        />
+      </video>
+    </div>
+  </body>
+</html>

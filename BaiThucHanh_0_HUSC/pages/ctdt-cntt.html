@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương trình đào tạo</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 10px 40px 0px 20px ;
+            font-size: 22px;
+        }
+        .tieude {
+            color: blue;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td, th {
+            border: 1px solid;
+        }
+        th:nth-child(1), td:nth-child(1) {
+            width: 7%;
+            text-align: center;
+        }
+        th:nth-child(2), th:nth-child(2) {
+            width: 68%;
+        }
+        th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
+            width: 12.5%;
+            text-align: center;
+        }
+
+        .LoaiKienThuc {
+            text-align: left !important;
+            padding-left: 10px;
+        }
+        .Monhoc {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="tieude">CHƯƠNG TRÌNH ĐÀO TẠO</h1>
+    <hr>
+
+    <ul>
+        <li>Ngành đào tạo: Công nghệ thông tin</li>
+        <li>Thời gian đào tạo: 4 năm (8 học kì)</li>
+        <li>Tổng số tín chỉ phải tích lũy: 120 tín chỉ</li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th class="Monhoc">Học phần</th>
+                <th>Số tín chỉ</th>
+                <th>Học kỳ</th>
+        </thead>
+                
+        <tbody>
+            <tr>
+                <th class="LoaiKienThuc" colspan="4">Khối kiến thức chung</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="Monhoc">Triết học Mác-Lênin</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td class="Monhoc">Nhập môn lập trình</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td class="Monhoc">Tiếng Anh cơ bản</td>
+                <td>3</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <th class="LoaiKienThuc" colspan="4">Kiến thức cơ bản của ngành</th>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td class="Monhoc">Cơ sở dữ liệu</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="Monhoc">Mạng máy tính</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td class="Monhoc"> Cấu trúc dữ liệu và giải thuật</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="Monhoc">Kỹ thuật lập trình</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="Monhoc">Lý thuyết đồ họa</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

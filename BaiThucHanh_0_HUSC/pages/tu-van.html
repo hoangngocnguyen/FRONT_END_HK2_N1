@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tư vấn tuyển sinh</title>
+
+    <style>
+      body {
+        margin: 10px 50px 0px 20px;
+        font-size: 24px;
+      }
+
+      .tieude {
+        color: blue;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 5px;
+      }
+
+      legend {
+        padding: 5px;
+      }
+
+      fieldset {
+        width: 90%;
+        padding-bottom: 25px;
+      }
+
+      form {
+        padding-left: 5px;
+      }
+
+      .input-row {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .input-row label {
+        width: 50%;
+      }
+      .input-row input {
+        width: 40%;
+        height: 24px;
+      }
+
+
+      .radio {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .radio-button {
+        width: 20px;
+      }
+      .radio label {
+        margin-right: 50px;
+      }
+
+      
+      select {
+        width: 40%;
+        font-size: 18px;
+        background-color: #E6E6E6;
+      }
+
+      .checkbox {
+        margin-left: 49%;
+        flex-shrink: 0;
+        
+      }
+      
+      .XacNhanForm {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        margin: 0 5px;
+        font-size: 18px;
+        width: 120px;
+        height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="tieude">HỎI ĐÁP TƯ VẤN TUYỂN SINH</h1>
+    <hr />
+
+    <fieldset>
+      <legend>Liên hệ hỏi đáp tư vấn tuyển sinh</legend>
+      <form action="" method="post">
+        <div class="input-row">
+          <label for="name">Họ và tên:</label>
+          <input type="text" class="input" />
+        </div>
+
+        <div class="input-row">
+          <label for="gioitinh">Giới tính:</label>
+          <div class="radio">
+            <input type="radio" name="gioitinh" id="gioitinh-nam" class="radio-button" />
+            <label for="gioitinh-nam" class="radio-button">Nam</label>
+
+            <input type="radio" name="gioitinh" id="gioitinh-nu" class="radio-button"/>
+            <label for="gioitinh-nu" class="radio-button">Nữ</label>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label for="">Email:</label>
+          <input type="text" class="input" />
+        </div>
+
+        <div class="input-row">
+          <label for="sdt">Di động:</label>
+          <input type="text" class="input" />
+        </div>
+
+        <div class="input-row">
+          <label for="nganh_hoc_quan_tam">Ngành học bạn quan tâm:</label>
+          <select name="" id="">
+            <option value="">Công nghệ thông tin</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <label for="cauhoi">Câu hỏi của bạn là gì?</label>
+          <textarea name="" id="" cols="30" rows="3"></textarea>
+        </div>
+
+        <p class="checkbox">
+          <input type="checkbox" name="" id="" />
+          Tôi xác nhận thông tin trên là đúng
+        </p>
+
+        <div class="XacNhanForm">
+          <button type="submit">Gửi câu hỏi</button>
+          <button type="reset">Xóa form</button>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>

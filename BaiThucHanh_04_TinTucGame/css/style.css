@@ -1,0 +1,254 @@
+.container {
+  width: 1200px;
+<<<<<<< HEAD
+  /* outline: 2px solid green; */
+=======
+  outline: 2px solid green;
+>>>>>>> 85fdc26a8d474e93e551c9718be493cada0a5339
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+/* HEADER */
+.header {
+  height: 125px;
+  display: grid;
+  grid-template-columns: 105px auto;
+  grid-template-rows: 50% 50%;
+  font-size: 1.5rem;
+}
+.logo {
+  grid-row: 1/3;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.header-top,
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 0px 15px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.header-top a {
+  color: #000;
+}
+.header-menu {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-menu li {
+  display: inline-block;
+}
+
+.header-bottom {
+  background-color: var(--bg-primary-color);
+}
+.header-bottom a {
+  color: #fff;
+}
+.header-links {
+  list-style: none;
+}
+.header-links input {
+  height: 30px;
+  padding: 10px;
+  width: 250px;
+}
+.header-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.header-links i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* BANNER */
+.banner {
+  margin-top: 10px;
+}
+.banner img {
+  width: 100%;
+}
+
+/* HOT NEWS */
+.hot-news {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.hot-news img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(40, 27, 27, 0.4);
+}
+.hot-news a {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 0 15px 20px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hot-news-1 a {
+  font-size: 3.4rem;
+  line-height: 40px;
+}
+.hot-news-1 {
+  position: relative;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.hot-news-2 {
+  position: relative;
+  grid-column: 3/5;
+}
+.hot-news-2 a {
+  font-size: 2.4rem;
+  line-height: 25px;
+}
+.hot-news-3 a,
+.hot-news-4 a {
+  font-size: 1.4rem;
+  line-height: 18px;
+}
+.hot-news-3 {
+  position: relative;
+}
+.hot-news-4 {
+  position: relative;
+}
+
+/* POST */
+.post {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+  text-align: justify;
+}
+.post a {
+  color: #000;
+}
+.post-title {
+  font-size: var(--title-font-size);
+  color: var(--bg-primary-color);
+  position: relative;
+  margin-bottom: 30px;
+}
+.post-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--bg-primary-color);
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 230px auto;
+  padding: 0 25px 20px 0;
+}
+.news-item-image {
+  margin-right: 15px;
+}
+.news-item-image img {
+  width: 100%;
+}
+.news-item-title {
+  font-size: var(--title-font-size);
+  font-weight: bold;
+}
+.news-item-date {
+  margin-top: 15px;
+  font-size: 1.24rem;
+  color: gray;
+}
+.news-item-content {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #292828;
+  line-height: 20px;
+}
+
+/* top-news */
+.news-item-small-title {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  line-height: 22px;
+}
+
+.top-news img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: auto 25px;
+}
+.footer-top {
+  background-color: #383838;
+  color: #a3a3a3;
+  display: grid;
+  grid-template-columns: 80fr 20fr;
+  padding: 25px 40px 30px 25px;
+}
+.footer-top div:nth-child(1) {
+  padding-right: 60px;
+}
+.footer-top div {
+  display: grid;
+  grid-template-rows: 40px auto;
+}
+.footer-top h1 {
+  font-size: 2rem;
+}
+.footer-top p {
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+.footer-top ul {
+  list-style: none;
+}
+.footer-top li {
+  display: inline-block;
+}
+.footer-top i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  background-color: #000;
+  color: #808080;
+  font-size: 1.2rem;
+}
+.footer-bottom p {
+  padding-left: 20px;
+  line-height: 25px;
+}

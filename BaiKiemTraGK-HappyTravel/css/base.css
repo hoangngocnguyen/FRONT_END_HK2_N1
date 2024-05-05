@@ -1,0 +1,26 @@
+:root {
+    --color-purple: #660066;
+    --font-size-title: 2.5rem;
+    --font-size-subtitle: 1.4rem;
+    --subtitle-color: #343434;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.full-container {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
